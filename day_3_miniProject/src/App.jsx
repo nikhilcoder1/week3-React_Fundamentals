@@ -13,9 +13,8 @@ function App() {
     { id: 2, title: "Shutter Island", genre: "Thriller" },
     { id: 3, title: "Titanic", genre: "Drama" },
     { id: 4, title: "The Sixth Sense", genre: "Psychological Thriller" },
-    { id: 5, title: "13-B", genre: "Suspense/Horro" },
+    { id: 5, title: "13-B", genre: "Suspense/Horror" },
     { id: 6, title: "Sita-Ramam", genre: "Romance" },
-    { id: 7, title: "Charlie-777", genre: "Drama" },
   ];
 
   return (
@@ -47,12 +46,6 @@ function App() {
       ) : (
         <GridView movies={movies} />
       )}
-
-      className={`px-6 py-2 rounded-full font-semibold transition
-        ${isListView 
-          ? "bg-blue-500 text-white" 
-          : "bg-gray-700 text-gray-300 hover:bg-gray-600"}
-      `}
 
     </div>
   )
